@@ -1,0 +1,15 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: ajas
+      POSTGRES_PASSWORD: Ajas@123
+      POSTGRES_DB: expensecalculator
+    ports:
+      - 5439:5432
+    volumes:
+      - db-data:/var/lib/postgresql/data
+volumes:
+  db-data:
