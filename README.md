@@ -6,6 +6,29 @@
 The Expense and Income Management application is designed to assist users in managing their finances effectively by tracking both expenses and income. It provides users with tools to monitor their spending, track income sources, analyze profit and loss, and maintain financial stability.
 
 ### Functional Requirements:
+
+#### User Management:
+
+Users can register accounts by providing basic information such as name, email, and password.
+Users can log in to their accounts securely.
+Users can update their profile information.
+Users can delete their accounts.
+#### Expense Management:
+- Users can add daily expenses, including various categories such as bus fare, groceries, food, etc.
+- Users can view, update, and delete their daily expenses.
+- Users can add weekly expenses, consisting of recurring expenses or specific expenses for the week.
+- Users can view, update, and delete their weekly expenses.
+- Users can add monthly expenses, such as rent, utilities, subscriptions, etc.
+- Users can view, update, and delete their monthly expenses.
+
+#### Transaction Management:
+- Users can add transactions associated with their expenses, specifying the amount, category, date, and payment method.
+- Users can view, update, and delete transactions.
+- 
+#### Expense Summary:
+- Users can view summaries of their daily, weekly, and monthly expenses.
+- Summaries include total expenses, categorized expenses, and trends over time.
+  
 #### Income Management:
 - Users can add income transactions, specifying the source, amount, date, and category.
 - Users can view, update, and delete income transactions.
