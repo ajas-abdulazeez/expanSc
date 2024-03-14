@@ -139,6 +139,8 @@ public class DailyExpensesServiceImpl {
             DailyExpensesSummaryDTO summaryDTO = new DailyExpensesSummaryDTO();
             summaryDTO.setDate(dailyExpenses.getDate());
             double totalAmount = 0.0;
+            summaryDTO.setDayReference(dailyExpenses.getDayReference());
+
 
             totalAmount += dailyExpenses.getBusFair().stream().mapToDouble(Transactions::getAmount).sum();
             totalAmount += dailyExpenses.getGroceries().stream().mapToDouble(Transactions::getAmount).sum();
@@ -163,6 +165,7 @@ public class DailyExpensesServiceImpl {
             DailyExpensesSummaryDTO summaryDTO = new DailyExpensesSummaryDTO();
             summaryDTO.setDate(dailyExpenses.getDate());
             double totalAmount = 0.0;
+            summaryDTO.setDayReference(dailyExpenses.getDayReference());
 
             totalAmount += dailyExpenses.getBusFair().stream().mapToDouble(Transactions::getAmount).sum();
             totalAmount += dailyExpenses.getGroceries().stream().mapToDouble(Transactions::getAmount).sum();

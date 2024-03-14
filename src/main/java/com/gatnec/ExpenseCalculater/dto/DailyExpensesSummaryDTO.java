@@ -8,5 +8,6 @@ import java.time.LocalDate;
 public class DailyExpensesSummaryDTO {
 
     private LocalDate date;
+    private String dayReference;
     private double totalAmount;
 }

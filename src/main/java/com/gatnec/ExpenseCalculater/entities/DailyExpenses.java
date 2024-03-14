@@ -18,6 +18,9 @@ public class DailyExpenses extends Expenses {
     @JoinColumn(name = "user_id", updatable = false)
     private User user;
 
+    @Column(name = "day_reference",nullable = true)
+    private String dayReference;
+
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
     @JoinColumn(name = "bus_fair_id")
     private List<Transactions> busFair;
